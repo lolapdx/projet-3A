@@ -51,6 +51,7 @@ main {
 .ville {
     text-align:center;
     align-content:center;
+    position:relative;
     flex: 1;
     height:100%;
     background-color: aquamarine;
@@ -59,18 +60,19 @@ main {
 
 
   
-.tile:hover {
+.ville:hover {
     transform: rotateY(180deg);
     transition: all 0.5s ease;
     transform-style: preserve-3d;
   }
   
 .front {
-    position: relative;
+    position:absolute;
     height:100%;
     width:100%;
     background-color: rgba(253, 251, 243, 1);
     backface-visibility: hidden;
+    align-content: center;
   }
   
 .back {
@@ -112,17 +114,21 @@ main {
     align-content: center;
     display:flex;
     gap:10%;
-    background-color: black;
 }
 
 img{
     width:100%;
 }
 
-.calendrier{
-    flex-grow:3;
+.carte{
+    flex:0.5;
     height:100%;
-    background-color: azure;
+}
+
+.calendrier{
+    flex:1;
+    height:100%;
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
