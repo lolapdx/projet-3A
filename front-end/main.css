@@ -72,6 +72,7 @@ main {
     width:100%;
     background-color: rgba(253, 251, 243, 1);
     backface-visibility: hidden;
+    align-content: center;
   }
   
 .back {
@@ -113,17 +114,21 @@ main {
     align-content: center;
     display:flex;
     gap:10%;
-    background-color: black;
 }
 
 img{
     width:100%;
 }
 
-.calendrier{
-    flex-grow:3;
+.carte{
+    flex:0.5;
     height:100%;
-    background-color: azure;
+}
+
+.calendrier{
+    flex:1;
+    height:100%;
+    background-color: rgb(255, 255, 255);
     text-align: center;
 }
 
