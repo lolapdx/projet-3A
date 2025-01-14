@@ -23,6 +23,7 @@ header {
     text-align: center;
     background-color:white;
     z-index: 1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -62,7 +63,7 @@ main {
   
 .ville:hover {
     transform: rotateY(180deg);
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
     transform-style: preserve-3d;
   }
   
@@ -90,7 +91,7 @@ main {
     padding-right:5%;
     height:90vh;
     padding-top:10vh;
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
 }
 
 .grille_2 {
@@ -98,14 +99,20 @@ main {
     align-content: center;
     display:flex;
     gap:5%;
-    background-color: chocolate;
+    background-color: rgb(255, 255, 255);
 }
 
 .mini_oeuvre {
     flex:1;
     height:100%;
     text-align: center;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.mini_oeuvre img {
+    width:100%;
+    border-radius: 5%;
 }
 
 .bottom {
@@ -132,3 +139,8 @@ img{
     text-align: center;
 }
 
+.back img {
+    height: 100%;   /* Hauteur de l'image ajustée à 100% du conteneur */
+    object-fit: cover;  /* L'image couvre tout le conteneur, recadrée si nécessaire */
+    filter: grayscale(100%);
+  }
