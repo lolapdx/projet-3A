@@ -30,8 +30,18 @@ header {
 h1 {
     font-size: 1.2em;
     color:rgba(71, 69, 63, 1);
+    width:80%;
+    display:inline-block;
 }
 
+.fa-solid fa-house {
+    display:inline-block;
+}
+
+
+.fa-regular fa-circle-question{
+    display:inline-block;
+}
 
 main {
     display:flex;
@@ -55,7 +65,6 @@ main {
     position:relative;
     flex: 1;
     height:100%;
-    background-color: aquamarine;
     cursor:pointer;
 }
 
@@ -140,7 +149,7 @@ img{
 }
 
 .back img {
-    height: 100%;   /* Hauteur de l'image ajustée à 100% du conteneur */
-    object-fit: cover;  /* L'image couvre tout le conteneur, recadrée si nécessaire */
+    height: 100%;
+    object-fit: cover;
     filter: grayscale(100%);
   }
