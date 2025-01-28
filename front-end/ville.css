@@ -84,7 +84,7 @@ main {
     padding-right:5%;
     height:90vh;
     padding-top:10vh;
-    background-color: rgb(49, 229, 18);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     align-content: center;
 }
@@ -94,34 +94,32 @@ img{
 }
 
 .annee {
-    width:60%;
-    height:80%;
-    margin:20%;
-    margin-top:2%;
+    width:100%;
+    height:58%;
+    margin-top:5%;
     margin-bottom:18%;
-    background-color: rgb(255, 127, 202);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #f9f6ef;
     border-radius: 2%;
+    align-content:baseline;
+
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(31, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    gap: 10px;
-    width: 95vw;
-    max-width: 1200px;
+    row-gap: 5%;
+    column-gap: 1%;
+    margin: 1%;
   }
 
   .circle {
     position: relative;
-    width: 100%;
-    padding-top: 100%; /* Maintient un ratio 1:1 pour garder les cercles */
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #ddd;
+    aspect-ratio: 8/6;
+    border-radius: 5%;
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .circle img {
