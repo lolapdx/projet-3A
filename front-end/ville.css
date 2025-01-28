@@ -21,14 +21,31 @@ header {
     height:10vh;
     align-content: center;
     text-align: center;
-    background-color:rgba(255, 253, 246, 0.65);
+    background-color:white;
     z-index: 1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 
 h1 {
     font-size: 1.2em;
     color:rgba(71, 69, 63, 1);
+    width:80%;
+    display:inline-block;
+}
+
+.fa-solid fa-house {
+    display:inline-block;
+}
+
+
+.fa-regular fa-circle-question{
+    display:inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 main {
