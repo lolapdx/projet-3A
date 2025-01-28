@@ -70,8 +70,13 @@ main {
     margin:20%;
     margin-top:2%;
     margin-bottom:18%;
-    background-color: rgb(13, 76, 55);
+    background-color: rgb(255, 255, 255);
     border-radius: 2%;
+}
+
+.oeuvre img {
+    border-radius: 2%;
+    width: 100%;
 }
 
 .bas {
