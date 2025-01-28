@@ -95,13 +95,11 @@ img{
 
 .annee {
     width:100%;
-    height:58%;
-    margin-top:5%;
+    height:56%;
+    margin-top:9%;
     margin-bottom:18%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 1%;
     background-color: #f9f6ef;
-    border-radius: 2%;
     align-content:baseline;
 
 }
@@ -112,13 +110,11 @@ img{
     grid-template-rows: repeat(12, 1fr);
     row-gap: 5%;
     column-gap: 1%;
-    margin: 1%;
   }
 
   .circle {
     position: relative;
     aspect-ratio: 8/6;
-    border-radius: 5%;
     display: flex;
   }
 
@@ -127,4 +123,10 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10%;
   }
+
+.circle img:hover {
+    transform:scale(10);
+    z-index: 1;
+}
