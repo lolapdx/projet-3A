@@ -44,7 +44,7 @@ main {
     height:90vh;
     align-content: center;
     text-align: center;
-    background-color: blueviolet;
+    background-color: rgb(255, 255, 255);
 }
 
 .oeuvre {
@@ -62,7 +62,7 @@ main {
     padding-right:5%;
     height:90vh;
     padding-top:10vh;
-    background-color: brown;
+    background-color: rgb(49, 229, 18);
     text-align: center;
     align-content: center;
 }
