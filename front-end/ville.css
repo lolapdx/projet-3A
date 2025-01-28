@@ -95,26 +95,30 @@ img{
 
 .annee {
     width:100%;
-    height:56%;
-    margin-top:9%;
+    height:58%;
+    margin-top:5%;
     margin-bottom:18%;
-    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-color: #f9f6ef;
+    border-radius: 2%;
     align-content:baseline;
 
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(31, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(13, 1fr);
     row-gap: 5%;
     column-gap: 1%;
+    margin: 1%;
   }
 
   .circle {
     position: relative;
     aspect-ratio: 8/6;
+    border-radius: 5%;
     display: flex;
   }
 
@@ -123,10 +127,4 @@ img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10%;
   }
-
-.circle img:hover {
-    transform:scale(10);
-    z-index: 1;
-}
