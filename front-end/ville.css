@@ -80,7 +80,7 @@ main {
 }
 
 .bas {
-    padding-left:5%;
+    padding-left:3%;
     padding-right:5%;
     height:90vh;
     padding-top:10vh;
@@ -95,12 +95,13 @@ img{
 
 .annee {
     width:100%;
-    height:56%;
-    margin-top:9%;
-    margin-bottom:18%;
+    height:70%;
+    margin-top:2%;
+    margin-bottom:5%;
     padding: 1%;
-    background-color: #f9f6ef;
+    background-color: #000000;
     align-content:baseline;
+    border-radius: 3%;
 
 }
 
@@ -108,8 +109,8 @@ img{
     display: grid;
     grid-template-columns: repeat(32, 1fr);
     grid-template-rows: repeat(13, 1fr);
-    row-gap: 5%;
-    column-gap: 1%;
+    row-gap: 4%;
+    column-gap: 0.8%;
     margin: 1%;
   }
 
