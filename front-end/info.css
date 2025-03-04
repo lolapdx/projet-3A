@@ -56,16 +56,25 @@ h1 {
     border-radius: 20px;
     background-color: white;
     margin: 20px;
+<<<<<<< Updated upstream
     padding: 20px;
+=======
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+ 
+>>>>>>> Stashed changes
 }
 
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-top: 2%;
 }
 
 img{
-    width: 15vh;
+    width: 20vh;
     height: auto;
+    border-radius: 5px;
 }

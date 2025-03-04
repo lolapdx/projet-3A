@@ -1,0 +1,117 @@
+html {
+    background-color: #ffffff;
+}
+
+.zen-kaku-gothic-new-regular {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+  
+body {
+    margin: 0;
+    font-family : 'Zen Kaku Gothic New';
+}
+
+header {
+    position:fixed;
+    top:0;
+    width:100%;
+    height:10vh;
+    align-content: center;
+    text-align: center;
+    background-color:white;
+    z-index: 1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 1.2em;
+    color:rgba(71, 69, 63, 1);
+    width:80%;
+    display:inline-block;
+}
+
+.fa-solid fa-house {
+    display:inline-block;
+}
+
+.fa-regular fa-circle-question{
+    display:inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+
+.haut {
+    height: fit-content;
+    padding-top:10vh;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.haut img {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    width: 55%;
+    aspect-ratio: 4/3;
+    border-radius: 3%;
+}
+
+.bas {
+    height: fit-content;
+    padding: 5%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+img{
+    height:100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    row-gap: 7px;
+    column-gap: 5px;
+    margin-top: 2%;
+    padding: 2%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    background-color: #ffffff;
+    border-radius: 25px;
+  }
+
+  .circle, .date {
+    position: relative;
+    aspect-ratio: 4/3;
+    display: flex;
+  }
+
+  .circle img, .date img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 0.5px solid #000000; 
+  }
+
+.circle img:hover {
+    transform:scale(3);
+    z-index: 1;
+}
