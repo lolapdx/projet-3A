@@ -38,10 +38,17 @@ h1 {
     display:inline-block;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .encart{
     border-radius: 20px;
     background-color: #F9F6EF;
     margin: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 20px;
 }
 .encart h2{
@@ -56,20 +63,10 @@ h1 {
     border-radius: 20px;
     background-color: white;
     margin: 20px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    padding: 20px;
-=======
-=======
->>>>>>> Stashed changes
     padding: 10px;
     margin-left: 5%;
     margin-right: 5%;
  
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
 
 .container {
