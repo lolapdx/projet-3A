@@ -43,7 +43,27 @@
             </section>
             <section class="encart">
                 <h2>Comment sont générées nos oeuvres ?</h2>
-                <p>blablablabbla</p>
+                <p>Nous avons réalisé nos œuvres grâce à un code Python récupérant des données via l’API de Météo France. Celle-ci étant utilisable gratuitement, il suffit de se créer un compte sur leur portail puis de générer une clé ou un token afin de récupérer automatiquement ces données.</p>
+
+<p>Pour comprendre nos œuvres, chacune d’entre elles représente une journée de 24h où chaque heure est représentée par un carré principal de l’image (celui recoupé en plus petits).</p>
+
+<p>Nous avons choisi de travailler avec 4 paramètres principaux à savoir :</p>
+
+<ul>
+    <li>La température en °C</li>
+    <li>La couverture nuageuse via la nébulosité</li>
+    <li>Le vent : sa vitesse en m/s et son orientation en radians</li>
+    <li>Les millimètres de précipitations</li>
+</ul>
+
+<p><strong>La température</strong> est représentée par la couleur de fond des grands carrés. En effet, on vient récupérer la température réelle mesurée pour chaque heure, puis via une palette de couleurs pour chaque groupe de 3 degrés, on vient colorier aléatoirement les carrés de chaque heure.</p>
+
+<p><strong>La couverture nuageuse</strong> est représentée chaque heure par un éclaircissement ou un assombrissement de chaque grand carré. La nébulosité étant mesurée sur une échelle de 0 à 8, nous avons créé une proportionnalité entre cette nébulosité et l’éclaircissement de nos pixels.</p>
+
+<p><strong>Le vent</strong> est représenté moyenné sur la journée. En effet, on va venir moyenner sa force et sa direction sur une journée entière afin que cette force soit appliquée à l’ensemble de l’image via une déformation de ces pixels.</p>
+
+<p><strong>La pluie</strong> est représentée par la somme de millimètres de pluie sur la journée. Selon cette somme, on va venir blanchir ou ajouter des traits blancs sur un certain pourcentage de l’image du jour via une proportionnalité préalablement établie.</p>
+
             </section>
        </main>
 
