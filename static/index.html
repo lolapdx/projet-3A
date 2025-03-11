@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>What's the weath'art like</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+        <link href="static/main.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/db25e10a78.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="/"><i class="fa-solid fa-house"></i></a>
+            <h1> What's the Weath'ART like ? </h1> 
+            <a href="/info.html"><i class="fa-regular fa-circle-question"></i></a>
+        </header>
+
+        <main>
+            <div class="haut">
+                <div class="grille">
+                    <div class="ville" id="Nantes" onclick="window.location.href='/villes/Nantes'"> 
+                        <div class="front"> <img src="../static/images/villes/nantes.JPG"> </div>
+                        <div class="back"> <img src="../static/images/villes/VNantes.jpg"> </div>
+                    </div>
+                    <div class="ville" id="Marseille" onclick="window.location.href='/villes/Marseille'">
+                        <div class="front"> <img src="../static/images/villes/marseille.JPG"> </div>
+                        <div class="back"> <img src="../static/images/villes/VMarseille.jpeg"> </div>
+                    </div>
+                    <div class="ville" id="Lyon" onclick="window.location.href='/villes/Lyon'">
+                        <div class="front"> <img src="../static/images/villes/lyon.JPG"> </div>
+                        <div class="back"> <img src="../static/images/villes/VLyon.jpg"> </div>
+                    </div>
+                    <div class="ville" id="Lille" onclick="window.location.href='/villes/Lille'">
+                        <div class="front"> <img src="../static/images/villes/lille.JPG"> </div>
+                        <div class="back"> <img src="../static/images/villes/VLille.jpg"> </div>
+                    </div>
+                    <div class="ville" id="Paris" onclick="window.location.href='/villes/Paris'">
+                        <div class="front"> <img src="../static/images/villes/supelec.jpg"> </div>
+                        <div class="back"> <img src="../static/images/villes/VParis.jpg"> </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bas">
+                <p> Weath'ART du jour : </p>
+                <div class="grille2">
+                    <div class="oeuvre" id="oeuvre_Nantes"> </div>
+                    <div class="oeuvre" id="oeuvre_Marseille"> </div>
+                    <div class="oeuvre" id="oeuvre_Lyon"> </div>
+                    <div class="oeuvre" id="oeuvre_Lille"> </div>
+                    <div class="oeuvre" id="oeuvre_Paris"> </div>
+                    <div class="titre"> <p>Nantes</p> </div>
+                    <div class="titre"> <p>Marseille</p> </div>
+                    <div class="titre"> <p>Lyon</p> </div>
+                    <div class="titre"> <p>Lille</p> </div>
+                    <div class="titre"> <p>Paris</p> </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="carte"><img  src="../static/images/villes/carte.png"></div>
+                <div class="elegant-calencar">
+                    <div class="hautcalendar">
+                        <p id="reset">reset</p>
+                        <div id="header" class="clearfix">
+                            <div class="pre-button"><</div>
+                            <div class="head-info">
+                                <div class="head-day"></div>
+                                <div class="head-month"></div>
+                            </div>
+                            <div class="next-button">></div>
+                        </div>
+                    </div>
+                    <div class="bascalendar">
+                        <table id="calendar">
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+        </main>
+
+    </body>
+</html>
+
+<script src="static/script.js"></script>

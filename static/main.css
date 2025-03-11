@@ -1,0 +1,355 @@
+html {
+    background-color: #ffffff;
+}
+  
+.zen-kaku-gothic-new-regular {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+  
+body {
+    margin: 0;
+    font-family : 'Zen Kaku Gothic New';
+}
+
+
+header {
+    position:fixed;
+    top:0;
+    width:100%;
+    height:10vh;
+    align-content: center;
+    text-align: center;
+    background-color:white;
+    z-index: 1;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    font-size: 1.2em;
+    color:rgba(71, 69, 63, 1);
+    width:80%;
+    display:inline-block;
+}
+
+.fa-solid fa-house {
+    display:inline-block;
+}
+
+
+.fa-regular fa-circle-question{
+    display:inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+}
+
+.haut {
+    padding-top: 10vh;
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.bas{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.bottom {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width:100%;
+    height:90vh;
+    gap:0.5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.ville {
+    position: relative;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ville img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    filter: grayscale(100%);
+}
+
+.ville:hover .back{
+    opacity : 1;
+}
+
+.grille2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 0;
+    column-gap: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: rgb(255, 255, 255);
+  }
+
+.oeuvre{
+    position: relative;
+    aspect-ratio: 4/3;
+    display: flex;
+}
+
+.oeuvre img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.titre {
+    width: 100%;
+    align-content: start;
+    text-align: center;
+}
+
+.titre p {
+    margin: 0;
+    font-size: medium;
+}
+
+.carte img{
+    height: 365.97px;
+    aspect-ratio: 10/9;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-spacing: 8px;
+}
+
+.clearfix:before{
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+  
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+  
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.elegant-calencar {
+    height:fit-content;
+    width:fit-content;
+    border: 1px solid #c9c9c9;
+    text-align: center;
+    position: relative;
+}
+
+#header {
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: rgba(253, 251, 243, 1);
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+  
+.pre-button, .next-button {
+    font-size: 1.5em;
+    transition: transform 0.5s;
+    cursor: pointer;
+    width: 0.5em;
+    height: 0.5em;
+    line-height: 0.5em;
+    color: black;
+    border-radius: 50%;
+  }
+  
+.pre-button:hover, .next-button:hover {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+.pre-button:active,.next-button:active{
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+  
+.pre-button {
+    flex: 0.5;
+}
+  
+.next-button {
+    flex: 0.5;
+}
+  
+.head-info {
+    flex: 1;
+}
+  
+.head-day {
+    margin-top: 15px;
+    font-size: 4em;
+    line-height: 1;
+    color: black;
+}
+  
+.head-month {
+    margin-top: 10px;
+    font-size: 1em;
+    line-height: 1;
+    color: black;
+}
+
+.bascalendar {
+    padding: 2%;
+    align-content: center;
+    justify-items: center;
+}
+
+thead tr {
+    color: black;
+    text-transform: uppercase;
+    font-size: 85%;
+  }
+  
+tbody tr {
+    color: black;
+    font-size: 90%;
+}
+  
+tbody td{
+    border-radius: 25%;
+    cursor: pointer;
+    transition:all 0.2s ease-in;
+}
+  
+tbody td:hover, .selected {
+    color: white;
+    background-color: black;
+    border: none;
+}
+  
+tbody td:active {
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+  
+#today {
+    background-color: black;
+    color: #fff;
+    font-family: serif;
+    border-radius: 50%;
+}
+  
+#disabled {
+    cursor: default;
+    background: #fff;
+}
+  
+#disabled:hover {
+    background: #fff;
+    color: #c9c9c9;
+}
+  
+#reset {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    color: black;
+    font-family: serif;
+    font-size: small;
+    cursor: pointer;
+    padding: 0.25em 0.50em;
+    margin: 0.5em;
+    border: 0.05em solid gray;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+  
+#reset:hover {
+    color: black;
+    border-color: black;
+}
+  
+#reset:active{
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);     
+}
